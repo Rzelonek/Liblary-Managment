@@ -30,6 +30,7 @@ Features:
 - [ ] Make Connection with database like sql or API
 - [ ] Make better Gui
 - [ ] Add edit system for selected book and users
+- [ ] Make basic Release version with more clean code and better functionality 
 
 **How to Use:**
 ```
