@@ -1,0 +1,55 @@
+# Ignore compiled files
+*.class
+*.o
+*.pyc
+
+# Ignore build output
+build/
+dist/
+bin/
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore dependencies
+node_modules/
+vendor/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore sensitive or personal information
+config.ini
+secrets.txt
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore backup files
+*.bak
+*.backup
+
+# Ignore  files created by maven release plugin
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse m2e generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath

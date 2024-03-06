@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+
+<VBox alignment="CENTER"
+ spacing="20.0"
+  xmlns="http://javafx.com/javafx/8.0.171"
+   xmlns:fx="http://javafx.com/fxml/1" 
+   fx:controller="rzelonek.libsys.controlers.UserListController">
+    <children>
+      <HBox spacing="10">  
+        <Label text="All users" /> 
+        <Button fx:id="gobackbutton" text="←Go Back" onAction="#goback" />
+      </HBox>
+        <HBox spacing="10">  
+            <Label text="Look for user" />
+            <TextField fx:id="searchField" promptText="what you lookin for ? " />
+            <Label text="or Look for user by:" />
+            <TextField fx:id="LookForidField" promptText="ID" />
+            <TextField fx:id="LookFornameField" promptText="Name" />
+            <TextField fx:id="LookForRoleField" promptText="Role" />
+
+        </HBox>
+  
+        <HBox spacing="10">
+
+        </HBox>
+
+
+        <TableView fx:id="userTableView" prefWidth="400">
+            <columns>
+                  <TableColumn fx:id="id" text="id" />
+                  <TableColumn fx:id="name" text="name" />
+                  <TableColumn fx:id="password" text="password" />
+                  <TableColumn fx:id="role" text="Role" />
+                  <TableColumn fx:id="bookCounts" text="Books Rented" />
+                  <TableColumn fx:id="totalFine" text="Total Fine" />
+            </columns>
+        </TableView>
+
+        <HBox spacing="10">
+            <TextField fx:id="NewUserName" promptText="NewUserName" />
+            <TextField fx:id="NewUserPassword" promptText="NewUserPassword" />
+            <ComboBox fx:id="roleComboBox" promptText="Select Role" />
+            <Button fx:id="addUserB" text="Add User" onAction="#addUser" />
+        </HBox>
+
+        <HBox spacing="10">
+            <TextField fx:id="NewPassword" promptText="NewPassword" />
+            <TextField fx:id="ConfrimNewPassword" promptText="ConfrimNewPassword" />
+            <Button fx:id="changePasswordB" text="change Selected  Password"   onAction="#changePassword" />
+            <TextField fx:id="NewUserGroup" promptText="NewUserGroup" />
+            <Button fx:id="changeUserGroupB" text="change Selected  UserGroup" onAction="#changeUserGroup"  />
+        </HBox>
+
+        <HBox spacing="10">
+            <Button fx:id="removeUserB" text="Remove selected User" onAction="#removeUser"  />
+        </HBox>
+
+        <HBox spacing="10">
+            <TableView fx:id="bookTable" prefWidth="400">
+                  <columns>
+                        <TableColumn fx:id="rentedBookId" text="id" />
+                        <TableColumn fx:id="rentedBookName" text="name" />
+                        <TableColumn fx:id="date" text="date" />
+                        <TableColumn fx:id="enddate" text="enddate" />
+                        <TableColumn fx:id="fine" text="fine" /> 
+                  </columns>
+              </TableView>
+              <VBox alignment="CENTER" spacing="20.0" >
+              <Button fx:id="removeUserB" text="return book" onAction="#removeUser"  />
+              <Label text="Change End Date:" />
+            <DatePicker fx:id="endDatePicker" />
+            <Button fx:id="changeEndDateButton" text="Change Selected Book End Date" onAction="#removeUser" />
+              </VBox>
+
+
+        </HBox>
+
+
+
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

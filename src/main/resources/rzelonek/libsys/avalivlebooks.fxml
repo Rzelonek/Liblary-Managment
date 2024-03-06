@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.CheckBox?>
+
+
+<VBox alignment="CENTER"
+ spacing="20.0"
+  xmlns="http://javafx.com/javafx/8.0.171"
+   xmlns:fx="http://javafx.com/fxml/1" 
+ fx:controller="rzelonek.libsys.controlers.AllbooksController">
+
+ <HBox spacing="10">
+      <Label text="All books" />       
+     <Button fx:id="gobackbutton" text="←Go Back" onAction="#goback" />
+    </HBox>
+      <HBox spacing="10">  
+          <Label text="Look for book" />
+          <TextField fx:id="searchField" promptText="what you lookin for ? " />
+          <Label text="or" />
+      </HBox>
+
+      <HBox spacing="10">
+          <Label text="Look for book by:" />
+          <TextField fx:id="LookForidField" promptText="ID" />
+          <TextField fx:id="LookFornameField" promptText="Name" />
+          <TextField fx:id="LookForauthorField" promptText="Author" />
+
+      </HBox>
+
+      <TableView fx:id="bookTable">
+            <columns>
+                  <TableColumn fx:id="id" text="id" />
+                  <TableColumn fx:id="name" text="name" />
+                  <TableColumn fx:id="author" text="author" />
+                  <TableColumn fx:id="rented" text="rented" />
+            </columns>
+      </TableView>
+      <HBox spacing="10">
+            <Label text="Filter by Availability:" />
+
+            <CheckBox fx:id="availabilityFilter" />
+      </HBox>
+</VBox>
