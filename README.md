@@ -32,7 +32,6 @@ Features:
 - [ ] Add edit system for selected book and users
 - [ ] Make basic Release version with more clean code and better functionality
 
-![LOG IN SCREEN: ]https://i.imgur.com/hTh8cMG.png
 
 **How to Use:**
 ```
@@ -47,3 +46,31 @@ mvn clean install
 ```
 compile with maven and run with java
 ```
+
+**LOGIN:**
+
+![LOG IN SCREEN:](https://i.imgur.com/hTh8cMG.png)
+
+**ADMINPANEL:**
+
+![ADMINPANEL](https://i.imgur.com/pxdoUQf.png)
+
+**USERPANEL:**
+
+![USERPANEL](https://i.imgur.com/UiKAJys.png)
+
+**BOOKMANAGER:**
+
+![BOOKMANAGER](https://i.imgur.com/tar3jSf.png)
+
+**USERMANAGER:**
+
+![USERMANAGER](https://i.imgur.com/Apm3j9W.png)
+
+**USER:**
+
+![USER](https://i.imgur.com/u4n401u.png)
+
+**ALLBOOKK:**
+
+![ALLBOOKK](https://i.imgur.com/zAoGZLs.png)
