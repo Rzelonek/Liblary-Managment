@@ -29,4 +29,18 @@ Features:
 - [x] Add GUI with javaFX
 - [ ] Make Connection with database like sql or API
 - [ ] Make better Gui
-- [ ] Add edit system for selected book and users 
+- [ ] Add edit system for selected book and users
+
+**How to Use:**
+```
+git clone https://github.com/Rzelonek/Liblary-Managment.git
+```
+```
+cd library-management-tool
+```
+```
+mvn clean install
+```
+```
+compile with maven and run with java
+```
